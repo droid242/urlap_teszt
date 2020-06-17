@@ -8,21 +8,70 @@
 <body>
    <div class="container">
       <form>
+         <fieldset>
+            <legend>Személyes adatok:</legend>
+            <div>
+               <label for="name">Név: *</label>
+               <input id="name" name="name" type="text" placeholder="név" required>
+            </div>
+            <div>
+               <label for="email"> Email cím: *</label>
+               <input id="email" name="email" type="text" placeholder="email cím" required>
+            </div>
+            <div>
+               <label for="address">Cím: *</label>
+               <input id="address" name="address" type="text" placeholder="cím" required>
+            </div>
+            <div>
+               <label for="comment">Megjegyzés:</label>
+               <textarea id="comment" name="comment" rows="5" placeholder="megjegyzés"></textarea>
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Hamburger összeállítása:</legend>
+            <div>Extra feltét:</div>
+
+            <div>
+               <input checked id="nothing" name="extra" type="radio" value="0">
+               <label for="nothing">Nem kérek</label>
+            </div>
+            <div>
+               <input id="chese" name="extra" type="radio" value="300">
+               <label for="chese">Sajt</label>
+            </div>
+            <div>
+               <input id="double-chese" name="extra" type="radio" value="600">
+               <label for="double-chese">Dupla sajt</label>
+            </div>
+            <div>
+               <input id="double-meat" name="extra" type="radio" value="1000">
+               <label for="double-meat">Dupla hús</label>
+            </div>
+            <div>
+               <input id="double-double" name="extrae" type="radio" value="1600">
+               <label for="double-double">Dupla hús és sajt</label>
+            </div>
+            <div>
+               <input id="other" name="extra" type="radio" value="1800">
+               <label for="other">Más</label>
+            </div>
+            <div>
+               <label for="sauce">Szószok:</label>
+               <select name="sauce" id="sauce">
+                  <option value="0" selected>Barbecue</option>
+                  <option value="100">Smoked barbecue</option>
+                  <option value="250">Chili</option>
+               </select>
+            </div>
+             <div>
+               <label for="quantity">Mennyiség:</label>
+               <input id="quantity" name="quantity" type="number" min="1" max="10" value="1">
+            </div>
+         </fieldset>
+        
          <div>
-            <label for="name">Név: *</label>
-            <input id="name" name="name" type="text" required>
-         </div>
-         <div>
-            <label for="email"> Email cím: *</label>
-            <input id="email" name="email" type="text" required>
-         </div>
-         <div>
-            <label for="address">Cím: *</label>
-            <input id="address" name="address" type="text" required>
-         </div>
-         <div>
-            <label for="comment">Megjegyzés:</label>
-            <textarea id="comment" name="comment" rows="5"></textarea>
+            <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
          </div>
       </form>
    </div>
